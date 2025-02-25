@@ -37,7 +37,8 @@ int arr[] = new int[size];
 
 ### 2. Using a `for` Loop to Take User Input
 ```java
-for(int i=0; i<=arr.length-1; i++) {
+for(int i=0; i<=arr.length-1; i++)
+{
     arr[i] = s.nextInt();
 }
 ```
@@ -47,8 +48,10 @@ for(int i=0; i<=arr.length-1; i++) {
 ```java
 int newArr[] = new int[4];
 int index = 0;
-for(int i=0; i<=arr.length-1; i++) {
-    if(i==0 || i==1 || i==arr.length-2 || i==arr.length-1) {
+for(int i=0; i<=arr.length-1; i++)
+{
+    if(i==0 || i==1 || i==arr.length-2 || i==arr.length-1)
+    {
         newArr[index++] = arr[i];
     }
 }
@@ -59,9 +62,12 @@ for(int i=0; i<=arr.length-1; i++) {
 
 ### 4. Sorting `newArr[]` Using Nested `for` Loop
 ```java
-for(int i=0; i<=newArr.length-1; i++) {
-    for(int j=0; j<=i-1; j++) {
-        if(newArr[j] > newArr[i]) {
+for(int i=0; i<=newArr.length-1; i++)
+{
+    for(int j=0; j<=i-1; j++)
+    {
+        if(newArr[j] > newArr[i])
+        {
             int temp = newArr[i];
             newArr[i] = newArr[j];
             newArr[j] = temp;
@@ -76,8 +82,10 @@ for(int i=0; i<=newArr.length-1; i++) {
 ### 5. Replacing Sorted Elements Back in `arr[]`
 ```java
 index = 0;
-for(int i=0; i<=arr.length-1; i++) {
-    if(i==0 || i==1 || i==arr.length-2 || i==arr.length-1) {
+for(int i=0; i<=arr.length-1; i++)
+{
+    if(i==0 || i==1 || i==arr.length-2 || i==arr.length-1)
+    {
         arr[i] = newArr[index++];
     }
 }
